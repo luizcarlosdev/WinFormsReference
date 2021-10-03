@@ -22,5 +22,11 @@ namespace WinFormsReference
             string name = txtName.Text;
             lblGreeting.Text = $"Hello, {name}!";
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmAbout = new FrmAbout();
+            frmAbout.Show();
+        }
     }
 }
