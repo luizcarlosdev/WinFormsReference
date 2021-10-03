@@ -25,8 +25,7 @@ namespace WinFormsReference
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frmAbout = new FrmAbout();
-            frmAbout.Show();
+            MessageBox.Show(text: Application.ProductName + "\n" + Application.ProductVersion, caption: "About");
         }
     }
 }
