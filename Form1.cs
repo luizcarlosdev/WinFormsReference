@@ -17,5 +17,10 @@ namespace WinFormsReference
             InitializeComponent();
         }
 
+        private void btnSayHi_Click(object sender, EventArgs e)
+        {
+            string name = txtName.Text;
+            lblGreeting.Text = $"Hello, {name}!";
+        }
     }
 }
